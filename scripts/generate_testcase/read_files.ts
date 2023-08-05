@@ -1,5 +1,5 @@
 import { readdirSync, readFileSync} from "fs"
-import { Failed, Result, Succeeded } from "./result";
+import { Failed, Result, Succeeded } from "../result";
 import { parse} from "path"
 
 export interface MyFile {

@@ -2,5 +2,8 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ["tests"]
+  roots: ["tests"],
+  "transform": {
+    "^.+\\.(t|j)sx?$": "@swc/jest",
+  }
 };
