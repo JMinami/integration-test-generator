@@ -23,14 +23,14 @@ export const createFewShotPrompt = async (
       examples.map(example => {
         return `### proto
 ${example.protoContent}
-### テスト
+### テストシナリオ
 ${example.testcase}`}).join(EOL)
     )
 
     const startPrompt = PromptTemplate.fromTemplate(
       `### proto
 ${targetProto}
-### テスト`)
+### テストシナリオ`)
 
     const composedPrompt = new PipelinePromptTemplate({
       pipelinePrompts: [

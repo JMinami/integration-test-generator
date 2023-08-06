@@ -38,9 +38,9 @@ export const ModelMap: ModelMap = {
 } as const 
 
 export const getModel = (modelType: string): Result<Model> => {
-  if (modelType in modelTypes) {
+  if (modelTypes.some(modelName => modelName == modelType)) {
     return Succeeded(ModelMap[modelType])
   }
 
-  return Failed(new Error("invalid model type"))
+  return Failed(new Error(`invalid model type: ${modelType}`))
 }

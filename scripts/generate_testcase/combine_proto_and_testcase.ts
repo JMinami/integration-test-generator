@@ -1,5 +1,5 @@
 import { Result, Succeeded } from "../result";
-import { MyFile } from "./read_files";
+import { MyFile } from "../read_files";
 
 export interface ConbineProtoAndTestcase {
   name: string

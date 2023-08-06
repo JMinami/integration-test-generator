@@ -2,3 +2,5 @@ node_modules/
 secrets/
 config/local.json
 yarn-error.log
+
+target/

@@ -1,4 +1,4 @@
-import { getFiles } from "../../../scripts/generate_testcase/read_files"
+import { getFiles } from "../../../scripts/read_files"
 
 describe("ディレクトリを指定するとファイル名とファイルの中身を取得する", ()=>{
   test("ディレクトリに一件だけファイルがある場合、正しく取得できる", () => {
