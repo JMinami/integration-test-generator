@@ -5,5 +5,6 @@ module.exports = {
   roots: ["tests"],
   "transform": {
     "^.+\\.(t|j)sx?$": "@swc/jest",
-  }
+  },
+  testPathIgnorePatterns: ["/tests/models"]
 };

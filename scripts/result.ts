@@ -4,12 +4,12 @@ export interface Result<T> {
   isSucceeded: boolean
 }
 
-export interface ResultSuccess<T> {
+interface ResultSuccess<T> {
   value: T
   isSucceeded: boolean
 }
 
-export interface ResultFailed {
+interface ResultFailed {
   error: Error
   isSucceeded: boolean
 }

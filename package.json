@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "gen:case": "ts-node ./scripts/generate_test_case/index.ts",
+    "gen:case": "ts-node ./scripts/generate_testcase/index.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -16,8 +16,11 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
     "@types/config": "^3.3.0",
     "config": "^3.3.9",
+    "gpt-3-encoder": "^1.1.4",
+    "js-tiktoken": "^1.0.7",
     "langchain": "^0.0.122",
     "openai": "^3.3.0"
   }
